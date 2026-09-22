@@ -1,0 +1,4 @@
+-- Find cities in USA with pop > 100,000
+SELECT *
+FROM CITY
+WHERE COUNTRYCODE = 'USA' and POPULATION > 100000
