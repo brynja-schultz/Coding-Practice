@@ -1,0 +1,16 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    
+    arr = list(arr)
+    
+    winner = max(arr)
+    arr.remove(winner)
+    
+    runner_up = max(arr)
+    
+    while(runner_up == winner):
+        arr.remove(runner_up)
+        runner_up = max(arr)
+    
+    print(runner_up)
